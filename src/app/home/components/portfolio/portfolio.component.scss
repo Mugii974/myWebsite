@@ -1,0 +1,57 @@
+.container-fluid {
+  // position: fixed;
+  // background-color: #fcdab7;
+}
+
+div.body-content {
+  margin-top: 5%;
+
+}
+
+section.presentation {
+  background-image: url("/assets//img/presentation2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 700px;
+}
+
+section.about, section.skill {
+  height: auto;
+}
+
+section.experience {
+  height: 1000px;
+}
+
+div.content {
+  // margin-left: auto;
+  // margin-right: auto;
+  // position: absolute;
+  position: static;
+  margin-left: 285px;
+  margin-right: auto;
+  background-color: #fcdab7;
+  // background-color: rgb(235, 235, 235);
+  // background-color: palegoldenrod;
+  padding-top: 10%;
+  padding-left: 1%;
+  margin-bottom: auto;
+  border: 3px solid black;
+}
+
+section {
+  /* bloc static par défaut */
+  // margin-left: 285px;
+  // border: 3px solid black;
+}
+
+@media only screen and (max-width:1200px) {
+  div.content {
+    padding-top: 30%;
+  }
+}
+@media only screen and (max-width:768px) {
+  section.experience {
+    height: auto;
+  }
+}
