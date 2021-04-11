@@ -1,13 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
-
-html,body {
-    // height: 100%;
-    font-family: "Montserrat", sans-serif !important;
-}
-
 p {
     text-align: justify;
 }
+
 h1 {
     font: 'Montserrat', sans-serif;
     font-size: 40px;
@@ -25,4 +19,8 @@ h2 {
     font-size: 28px;
     font-weight: 800;
     line-height: 35px;
+}
+
+.text-primary {
+    color: #133b5c !important;
 }

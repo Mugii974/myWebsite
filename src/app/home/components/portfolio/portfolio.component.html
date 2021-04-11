@@ -1,0 +1,105 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top py-3">
+    <!-- Navbar content -->
+    <a class="navbar-brand" href="#">Tony FERRERE</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <!-- <a class="nav-link" routerLink="presentation">Présentation</a> -->
+                <a class="nav-link js-scroll-trigger" (click)="scroll(presentation)">Accueil</a>
+            </li>
+            <li class="nav-item active">
+                <!-- <a class="nav-link" routerLink="presentation">Présentation</a> -->
+                <a class="nav-link js-scroll-trigger" (click)="scroll(aboutme)">A propos de moi</a>
+            </li>
+            <li class="nav-item">
+                <!-- <a class="nav-link" routerLink="experiences">Mon Experience</a> -->
+                <a class="nav-link js-scroll-trigger"  (click)="scroll(experiences)">Mon Experience</a>
+            </li>
+            <!-- <a class="nav-link" routerLink="parcours">Mon Parcours</a> -->
+            <!-- <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" (click)="scroll(parcours)">Mon Parcours</a>
+            </li> -->
+            <li class="nav-item">
+                <!-- <a class="nav-link" routerLink="skills">Mes Compétences</a> -->
+                <a class="nav-link js-scroll-trigger" (click)="scroll(skills)">Mes Compétences</a>
+            </li>
+            <li class="nav-item">
+                <!-- <a class="nav-link" routerLink="hobbies">Mes Hobbies</a> -->
+                <a class="nav-link js-scroll-trigger" (click)="scroll(hobbies)">Mes Hobbies</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<section class="page-section portfolio bg-white presentation" #presentation>
+    <div class="container">
+        <div class="row mx-auto pt-5 pb-5 align-items-center justify-content-center">
+            <app-presentation></app-presentation>
+        </div>
+    </div>
+</section>
+
+<section class="page-section bg-light pt-5 pb-5 about" #aboutme>
+    <div class="container">
+        <div class="row mx-auto pt-2 align-items-center justify-content-center">
+            <app-about></app-about>
+        </div>
+    </div>
+</section>
+
+<section class="page-section bg-info py-5 skill" #skills>
+    <div class="container">
+        <div class="row mx-auto pt-2 align-items-center justify-content-center">
+            <app-skills></app-skills>
+        </div>
+    </div>
+</section>
+
+<section class="page-section bg-light py-5 experience" #experiences>
+    <div class="container">
+        <div class="row mx-auto align-items-center justify-content-center">
+            <app-experience></app-experience>
+        </div>
+    </div>
+</section>
+
+<!-- <section class="page-section bg-white" #parcours>
+    <div class="container">
+        <app-parcours></app-parcours>
+    </div>
+</section> -->
+
+<section class="page-section bg-primary py-5 hobbies" #hobbies>
+    <div class="container">
+        <app-hobbies></app-hobbies>
+    </div>
+</section>
+
+<!-- <app-sidenav></app-sidenav> -->
+
+<!-- <div class="container-fluid"> -->
+    <!-- <router-outlet></router-outlet> -->
+<!-- </div> -->
+
+<!-- <div class="container-fluid d-flex h-100 flex-column">
+    <app-sidenav></app-sidenav>
+
+    <div class="container-fluid content h-100 w-75">
+        <router-outlet></router-outlet>
+    </div>
+</div> -->
+
+
+<!-- <div class="container-fluid h-100">
+    <div class="row h-100">
+        <div class="col-2">
+          <app-sidenav></app-sidenav>
+        </div>
+        <div class="col-10 body-content">
+            <router-outlet></router-outlet>
+        </div>
+      </div>
+</div> -->
