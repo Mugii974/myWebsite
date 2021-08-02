@@ -1,0 +1,34 @@
+.square {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    // border: 5px outset gray;
+    border-radius: 2px;
+    width: 200px;
+    height: 200px;
+    background-color: #D8D8D8;
+    text-align: center;
+    h1 {
+        margin: auto;
+    }
+    span {
+        display: inline-block;
+        // padding-top: 15px;
+    }
+    button {
+        border: 1px solid red;
+        border-radius: 3px;
+        min-width: 75px;
+        min-height: 75px;
+        margin: auto;
+    }
+    /* transition when the mouse leave */
+    transition: transform .5s; 
+    &:hover {
+        transform: scale(0.8);
+        opacity: 0.9;
+        background-color: #CBCBCB;
+    }
+
+}

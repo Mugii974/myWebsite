@@ -1,0 +1,13 @@
+<div class="square"  (mouseover)="hover=true" (mouseout)="hover=false">
+    <ng-container *ngIf="!hover">
+        <h1>{{ title }}</h1>
+        <span>
+            {{ description }}
+        </span>
+    </ng-container>
+    <ng-container class="square-bigger" *ngIf="hover">
+        <button>
+           <h2>GO !</h2> 
+        </button>
+    </ng-container>
+</div>

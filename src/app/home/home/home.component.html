@@ -1,0 +1,55 @@
+<div class="center-container">
+    <div class="container">
+      <div class="header">
+        <div class="content-header">
+          <div class="image">
+            <img src="./assets/img/kirua.png" class="round-img">
+          </div>
+        </div>  
+        <div class="header-left">
+          <span>Tony:Ferrere<span class="smally">28ans</span></span>
+          <span>Développeur frontend</span>
+          <fa-icon [icon]="faUsers"></fa-icon>
+        </div>  
+      </div>
+    
+      <div class="container-center">
+        <!-- <h1>TITLE PART WITH BINDING OF COURSE</h1> -->
+        <div class="block">
+          <app-square-display></app-square-display>
+        </div>
+        <router-outlet></router-outlet>
+      </div>
+    
+      <div class="round-menu">
+        <div class="circle-chips">
+          
+        </div>
+        <div class="circle-chips">
+            <a routerLink="skills" routerLinkActive="active">
+                <h3>Skills</h3>
+            </a>
+        </div>
+        <div class="circle-chips">
+            <a routerLink="experiences" routerLinkActive="active">
+                <h3>Experiences</h3>
+            </a>
+        </div>
+        <div class="circle-chips">
+    
+        </div>
+        <div class="circle-chips">
+    
+        </div>
+        <div class="circle-chips">
+    
+        </div>
+      </div>
+    
+      <div class="footer">
+        <h2>A propos</h2>
+        <h2>Me contacter</h2>
+      </div>
+    
+    </div>
+  </div>

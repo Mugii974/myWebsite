@@ -1,0 +1,95 @@
+.center-container  {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.container {
+    width: 80%;
+    background: #F2F2F2;
+    
+    .header{
+        border: 1px solid violet;
+        width: 100%;
+        min-height: 10%;
+        display: flex;
+        justify-content: space-between;
+        .header-left {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 400px;
+            border: 1px solid violet;
+            .smally {
+                margin-left: 4px;
+                font-weight: bold;
+                font-size: 12px;
+            }
+        }
+        .content-header {
+            padding-left: 10px;;
+            display: flex;
+            justify-content: space-between;
+            .image {
+                border: 1px solid red;
+                position: relative;
+                width: 100px;
+                height: 100px;
+                overflow: hidden;
+                border-radius: 50%;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+    
+    .container-center {
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin: 10px 5% 10px 5%;
+        padding-bottom: 10px;
+        border: 1px solid blue;
+        min-height: 500px;
+        height: 100%;
+        .block {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 5px;
+            .square {
+                border:1px solid rebeccapurple;
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+    
+    .round-menu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 20%;
+        .circle-chips {
+            border: 1px solid royalblue;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+        }
+    }
+    
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin: 10px 5%;
+        border-top: 2px solid darkblue;
+    }
+}
