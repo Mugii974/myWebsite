@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faUsers } from '@fortawesome/free-solid-svg-icons';
+import { faUsers, faBatteryThreeQuarters, faWifi } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-home',
@@ -8,9 +8,23 @@ import { faUsers } from '@fortawesome/free-solid-svg-icons';
 })
 export class HomeComponent implements OnInit {
   faUsers = faUsers;
+  faBatteryThreeQuarters = faBatteryThreeQuarters;
+  faWifi = faWifi;
+  public now: string;
   constructor() { }
 
   ngOnInit(): void {
+    // this.playAudio();
+    setInterval(() => {
+      this.now = new Date().toString().split(' ')[4];
+    }, 1);
   }
+
+  // playAudio(){
+  //   let audio = new Audio();
+  //   audio.src = "../../../assets/audio/tokyo.mp3";
+  //   audio.load();
+  //   audio.play();
+  // }
 
 }

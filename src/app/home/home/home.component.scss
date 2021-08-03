@@ -11,9 +11,9 @@
 .container {
     width: 80%;
     background: #F2F2F2;
-    
+    padding: 5px;
+    border-radius: 5px;
     .header{
-        border: 1px solid violet;
         width: 100%;
         min-height: 10%;
         display: flex;
@@ -23,9 +23,13 @@
             justify-content: space-around;
             align-items: center;
             width: 400px;
-            border: 1px solid violet;
+            .flexible {
+                display: flex;
+            }
             .smally {
-                margin-left: 4px;
+                display: block;
+                padding-left: 2px;
+                padding-top: 40px;
                 font-weight: bold;
                 font-size: 12px;
             }
@@ -34,18 +38,6 @@
             padding-left: 10px;;
             display: flex;
             justify-content: space-between;
-            .image {
-                border: 1px solid red;
-                position: relative;
-                width: 100px;
-                height: 100px;
-                overflow: hidden;
-                border-radius: 50%;
-                img {
-                    width: 100%;
-                    height: auto;
-                }
-            }
         }
     }
     
@@ -93,3 +85,13 @@
         border-top: 2px solid darkblue;
     }
 }
+
+@media (max-width: 990px) {
+    .container {
+        .header {
+            .header-left {
+              width: 80%;
+            }
+        }
+    }
+  }

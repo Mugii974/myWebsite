@@ -2,14 +2,17 @@
     <div class="container">
       <div class="header">
         <div class="content-header">
-          <div class="image">
-            <img src="./assets/img/kirua.png" class="round-img">
-          </div>
+          <app-image-display></app-image-display>
         </div>  
         <div class="header-left">
-          <span>Tony:Ferrere<span class="smally">28ans</span></span>
+          <div class="flexible">
+            <h4>Tony:Ferrere</h4>
+            <span class="smally">28ans</span>
+          </div>
           <span>Développeur frontend</span>
-          <fa-icon [icon]="faUsers"></fa-icon>
+          <span>{{ now }}</span>
+          <fa-icon [icon]="faWifi"></fa-icon>
+          <fa-icon [icon]="faBatteryThreeQuarters"></fa-icon>
         </div>  
       </div>
     
