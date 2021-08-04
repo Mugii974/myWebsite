@@ -25,28 +25,12 @@
       </div>
     
       <div class="round-menu">
-        <div class="circle-chips">
-          
-        </div>
-        <div class="circle-chips">
-            <a routerLink="skills" routerLinkActive="active">
-                <h3>Skills</h3>
-            </a>
-        </div>
-        <div class="circle-chips">
-            <a routerLink="experiences" routerLinkActive="active">
-                <h3>Experiences</h3>
-            </a>
-        </div>
-        <div class="circle-chips">
-    
-        </div>
-        <div class="circle-chips">
-    
-        </div>
-        <div class="circle-chips">
-    
-        </div>
+        <ng-container *ngFor="let menu of menus">
+          <app-round-display
+            [label]="menu.label"
+            [path]="menu.path"
+          ></app-round-display>
+        </ng-container>
       </div>
     
       <div class="footer">

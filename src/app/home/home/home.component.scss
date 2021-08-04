@@ -68,13 +68,8 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        height: 20%;
-        .circle-chips {
-            border: 1px solid royalblue;
-            height: 100px;
-            width: 100px;
-            border-radius: 50%;
-        }
+        height: 150px;
+        min-height: 150px;
     }
     
     .footer {

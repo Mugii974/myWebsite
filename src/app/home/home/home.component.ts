@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faUsers, faBatteryThreeQuarters, faWifi } from '@fortawesome/free-solid-svg-icons';
+import { menuPaths } from './home.config';
 
 @Component({
   selector: 'app-home',
@@ -11,6 +12,7 @@ export class HomeComponent implements OnInit {
   faBatteryThreeQuarters = faBatteryThreeQuarters;
   faWifi = faWifi;
   public now: string;
+  public menus = menuPaths;
   constructor() { }
 
   ngOnInit(): void {

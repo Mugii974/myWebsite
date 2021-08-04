@@ -1,0 +1,22 @@
+.circle-chips {
+    height: 100px;
+    width: 100px;
+    margin:5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 2px 2px rgb(206, 201, 201);
+    border: 3px solid transparent;
+    cursor:pointer;
+    &:hover {
+        box-shadow: none;
+        border: 3px blue inset;
+    }
+    a {
+        text-decoration: none;
+        font-size: 14px;
+        color: inherit;
+    }
+}
