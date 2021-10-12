@@ -1,0 +1,17 @@
+.content {
+    background-color: antiquewhite;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .skills {
+        display: flex;
+        justify-content: space-between;
+        img {
+            width: auto;
+            height: 256px;
+        }
+    }
+}

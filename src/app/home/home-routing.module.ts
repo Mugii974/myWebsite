@@ -2,16 +2,20 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ExperiencesComponent } from './experiences/experiences.component';
 import { HomeComponent } from './home/home.component';
+import { ShowingComponent } from './showing/showing.component';
 import { SkillsComponent } from './skills/skills.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent,
     children: [
         {    
-           path: 'skills', component: SkillsComponent
+           path: '', component: ShowingComponent, data : { animation : 'isLeft' }
         },
         {    
-           path: 'experiences', component: ExperiencesComponent
+           path: 'skills', component: SkillsComponent, data : { animation : 'isRight' }
+        },
+        {    
+           path: 'experiences', component: ExperiencesComponent, data : { animation : 'isLeft' }
         } 
     ]},
 //   { path: 'skills', component: SkillsComponent }

@@ -7,12 +7,15 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home/home.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { ShowingComponent } from './showing/showing.component';
 
 @NgModule({
-  declarations: [HomeComponent, SkillsComponent, ExperiencesComponent],
+  declarations: [HomeComponent, SkillsComponent, ExperiencesComponent, ShowingComponent],
   imports: [
     CommonModule,
     RouterModule,
+    BrowserAnimationsModule,
     HomeRoutingModule,
     SharedModule,
     FontAwesomeModule

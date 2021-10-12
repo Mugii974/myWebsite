@@ -5,6 +5,11 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
+    redirectTo: '/screen',
+    pathMatch: 'full'
+  },
+  {
+    path: 'home',
     redirectTo: '/home',
     pathMatch: 'full'
   }

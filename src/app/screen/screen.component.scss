@@ -1,0 +1,51 @@
+.background {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: url('https://i.imgur.com/ncBisYw.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    background-size: 100%;
+    background-origin: top;
+    transition: 2s;
+    &.active {
+        background-size: 600%;
+    }
+}
+
+.content {
+    position: absolute;
+    width: 646px;
+    height: 366px;
+    left: 33%;
+    // right: 50%;
+    top: 23.5%;
+    // bottom: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    cursor: pointer;
+    color: red;
+    &:hover {
+        background: rgb(54, 50, 50);
+    }
+    
+    span {
+        transition: 1.5s;
+        &:hover {
+            transform: scale(1.5);
+        }
+        font-size: 20px;
+        font-weight: bold;
+        display: block;
+        border: 2px solid red;
+        border-radius: 20px;
+        padding: 10px;
+    }
+    
+    z-index: 10;
+}

@@ -16,12 +16,10 @@
         </div>  
       </div>
     
-      <div class="container-center">
-        <!-- <h1>TITLE PART WITH BINDING OF COURSE</h1> -->
-        <div class="block">
-          <app-square-display></app-square-display>
+      <div class="container-center" [@routeAnimations]="prepareRoute(outlet)">
+        <div class="content">
+          <router-outlet #outlet=outlet></router-outlet>
         </div>
-        <router-outlet></router-outlet>
       </div>
     
       <div class="round-menu">
@@ -40,3 +38,5 @@
     
     </div>
   </div>
+
+  <div class="background" *ngIf="firstTime"></div>
